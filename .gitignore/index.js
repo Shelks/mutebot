@@ -7,3 +7,13 @@ bot.on("ready", function() {
 })
 
 bot.login(process.env.TOKEN);
+
+bot.on('message', message => {
+
+        if (message.content === "ping"){
+                message.reply("pong");
+        }
+
+
+
+})
