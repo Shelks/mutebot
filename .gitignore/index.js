@@ -9,9 +9,12 @@ bot.on("ready", function() {
 bot.login(process.env.TOKEN);
 
 bot.on('message', message => {
-        if (message.content === "ping"){
-                message.reply("pong");
-        }
+        let mode_role = message.guild.roles.find('mute', settings.modrolename);
+        if (message.member.roles.has(mode_role.id).then(() => {
+
+                message.delete;
+
+        })
 
 
 
