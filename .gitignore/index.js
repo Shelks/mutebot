@@ -9,7 +9,8 @@ bot.on("ready", function() {
 bot.login(process.env.TOKEN);
 
 bot.on('message', message => {
-        let mode_role = message.guild.roles.find('mute', settings.modrolename);
+        let modrolename = "mute";
+        let mode_role = message.guild.roles.find('name', settings.modrolename);
         if (message.member.roles.has(mode_role.id).then(() => {
 
                 message.delete;
