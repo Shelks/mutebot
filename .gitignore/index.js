@@ -9,7 +9,7 @@ bot.on("ready", function() {
 bot.login(process.env.TOKEN);
 
 bot.on('message', message => {
-        if (message.member.roles.has(525010407807647744)) {
+        if (message.member.roles.has(524670062213201927)) {
 
                 message.delete;
 
