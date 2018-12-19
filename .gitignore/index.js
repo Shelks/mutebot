@@ -9,13 +9,11 @@ bot.on("ready", function() {
 bot.login(process.env.TOKEN);
 
 bot.on('message', message => {
-        let modrolename = "mute";
-        let mode_role = message.guild.roles.find('name', settings.modrolename);
-        if (message.member.roles.has(mode_role.id).then(() => {
+        if (message.member.roles.has(525010407807647744)) {
 
                 message.delete;
 
-        })
+        }
 
 
 
