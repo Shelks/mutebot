@@ -6,7 +6,7 @@ bot.on("ready", function() {
 
 })
 
-bot.login(process.env.TOKEN);
+bot.login("NTI0NjQyMjY5NDMzOTU0MzA3.DvrVnw.9pFniqtUV7CfZ98B5166Mn7FnAY");
 
 bot.on('message', message => {
         message.reply("test");
